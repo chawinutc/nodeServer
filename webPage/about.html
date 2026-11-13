@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="เกี่ยวกับ Ambertech และช่องทางติดต่อสอบถาม">
+	<title>เกี่ยวกับเรา | Ambertech</title>
+	<style>
+		:root {
+			--ink: #17243b;
+			--muted: #64748b;
+			--brand: #315efb;
+			--pale: #f4f7ff;
+			--line: #e5eaf2;
+		}
+		* { box-sizing: border-box; }
+		body {
+			margin: 0;
+			color: var(--ink);
+			font-family: "Noto Sans Thai", "Segoe UI", Tahoma, sans-serif;
+			line-height: 1.7;
+			background: #fff;
+		}
+		a { color: inherit; text-decoration: none; }
+		.container { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+		header { border-bottom: 1px solid var(--line); background: #fff; }
+		.nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+		.logo { font-size: 1.45rem; font-weight: 800; letter-spacing: -.04em; }
+		.logo span { color: var(--brand); }
+		nav { display: flex; align-items: center; gap: 30px; color: #526078; font-size: .95rem; }
+		nav a:hover, nav a[aria-current="page"] { color: var(--brand); }
+		.nav-contact { padding: 9px 18px; border: 1px solid var(--brand); border-radius: 8px; color: var(--brand); }
+		.hero { padding: 76px 0 70px; text-align: center; background: linear-gradient(135deg, #f3f6ff, #fff 70%); }
+		.eyebrow { color: var(--brand); font-size: .85rem; font-weight: 700; letter-spacing: .12em; }
+		h1 { margin: 10px 0 14px; font-size: clamp(2.2rem, 5vw, 3.5rem); line-height: 1.25; }
+		.hero p { max-width: 700px; margin: 0 auto; color: var(--muted); font-size: 1.08rem; }
+		section { padding: 68px 0; }
+		.about-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 56px; align-items: center; }
+		h2 { margin: 0 0 16px; font-size: clamp(1.7rem, 3vw, 2.2rem); line-height: 1.35; }
+		.copy p { margin: 0 0 14px; color: var(--muted); }
+		.highlight { padding: 30px; border-radius: 16px; background: var(--pale); }
+		.highlight h3 { margin: 0 0 10px; font-size: 1.2rem; }
+		.highlight p { margin: 0; color: var(--muted); }
+		.contact-section { background: #f8faff; }
+		.contact-heading { text-align: center; margin-bottom: 32px; }
+		.contact-heading p { color: var(--muted); margin: 0; }
+		.contact-card { max-width: 760px; margin: auto; padding: 32px; border: 1px solid var(--line); border-radius: 16px; background: #fff; }
+		.contact-row { display: grid; grid-template-columns: 150px 1fr; gap: 18px; padding: 13px 0; border-bottom: 1px solid var(--line); }
+		.contact-row:last-child { border-bottom: 0; }
+		.contact-label { color: var(--muted); }
+		.contact-value { font-weight: 600; }
+		.contact-note { margin: 20px 0 0; color: var(--muted); font-size: .9rem; }
+		footer { padding: 25px 0; color: #718096; font-size: .9rem; border-top: 1px solid var(--line); }
+		.footer-inner { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+		@media (max-width: 700px) {
+			.nav { padding: 14px 0; align-items: flex-start; flex-direction: column; }
+			nav { width: 100%; gap: 16px; flex-wrap: wrap; }
+			.nav-contact { padding: 5px 12px; }
+			.hero { padding: 55px 0; }
+			.about-grid { grid-template-columns: 1fr; gap: 28px; }
+			section { padding: 48px 0; }
+			.contact-card { padding: 20px; }
+			.contact-row { grid-template-columns: 1fr; gap: 2px; }
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container nav">
+			<a class="logo" href="index.html" aria-label="Ambertech หน้าแรก">amber<span>tech</span></a>
+			<nav aria-label="เมนูหลัก">
+				<a href="index.html">หน้าแรก</a>
+				<a href="about.html" aria-current="page">เกี่ยวกับเรา</a>
+				<a class="nav-contact" href="#contact">ติดต่อเรา</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="container">
+				<div class="eyebrow">ABOUT AMBERTECH</div>
+				<h1>เกี่ยวกับเรา</h1>
+				<p>Ambertech มุ่งมั่นนำเทคโนโลยีมาสร้างสรรค์โซลูชันที่ตอบโจทย์การทำงานและการเติบโตของธุรกิจ</p>
+			</div>
+		</section>
+
+		<section>
+			<div class="container about-grid">
+				<div class="copy">
+					<div class="eyebrow">WHO WE ARE</div>
+					<h2>เทคโนโลยีที่เข้าใจธุรกิจของคุณ</h2>
+					<p>เราเชื่อว่าเทคโนโลยีที่ดีควรใช้งานได้จริง ช่วยให้การทำงานมีประสิทธิภาพ และเติบโตไปพร้อมกับความต้องการขององค์กร</p>
+					<p>ทีม Ambertech ให้ความสำคัญกับการรับฟัง ทำความเข้าใจโจทย์ และร่วมพัฒนาแนวทางที่เหมาะสมในทุกขั้นตอน</p>
+				</div>
+				<div class="highlight">
+					<h3>แนวทางของเรา</h3>
+					<p>ทำงานอย่างใกล้ชิดกับลูกค้า เพื่อส่งมอบบริการและโซลูชันด้านเทคโนโลยีที่มีคุณภาพ น่าเชื่อถือ และพร้อมต่อยอดในอนาคต</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact-section" id="contact">
+			<div class="container">
+				<div class="contact-heading">
+					<div class="eyebrow">GET IN TOUCH</div>
+					<h2>ติดต่อสอบถาม</h2>
+					<p>สนใจบริการหรือมีข้อสงสัย ติดต่อทีมงาน Abbertech ได้ที่ช่องทางด้านล่าง</p>
+				</div>
+				<div class="contact-card">
+					<div class="contact-row">
+						<div class="contact-label">บริษัท</div>
+						<div class="contact-value">Abbertech</div>
+					</div>
+					<div class="contact-row">
+						<div class="contact-label">อีเมล</div>
+						<div class="contact-value">กรุณาระบุอีเมลติดต่อของบริษัท</div>
+					</div>
+					<div class="contact-row">
+						<div class="contact-label">โทรศัพท์</div>
+						<div class="contact-value">กรุณาระบุหมายเลขโทรศัพท์</div>
+					</div>
+					<p class="contact-note">สามารถติดต่อสอบถามรายละเอียดเพิ่มเติมหรือขอนัดหมายพูดคุยกับทีมงานได้</p>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container footer-inner">
+			<span>© <span id="year">2025</span> Abbertech. สงวนลิขสิทธิ์</span>
+			<a href="#contact">ติดต่อเรา</a>
+		</div>
+	</footer>
+</body>
+</html>
