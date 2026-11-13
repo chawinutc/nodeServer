@@ -1,0 +1,60 @@
+<table class="table table-striped table-hover">
+    <thead class="table-success">
+        <tr>
+            <th style="padding: 10px;">ลำดับ</th>
+            <th style="padding: 10px;">รหัสสินค้า</th>
+            <th style="padding: 10px;">ชื่อสินค้า</th>
+            <th style="padding: 10px;">ราคา (บาท)</th>
+            <th style="padding: 10px;">จำนวนคงเหลือ</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- เริ่มต้นการวนลูป Array -->
+        <% products.forEach(function(product, index) { %>
+            <tr>
+                <td style="padding: 10px;"><%= index + 1 %></td>
+                <td style="padding: 10px;"><%= product.id %></td>
+                <td style="padding: 10px;"><%= product.name %></td>
+                
+                <!-- จัดฟอร์แมตตัวเลขให้มีคอมม่า -->
+                <td style="padding: 10px;"><%= product.price.toLocaleString('th-TH') %></td>
+                
+                <!-- เช็คเงื่อนไขจำนวนสินค้าเพื่อเปลี่ยนสีข้อความ -->
+                <td style="padding: 10px;">
+                    <% if (product.quantity > 0) { %>
+                        <span style="color: green;"><%= product.quantity %> ชิ้น</span>
+                    <% } else { %>
+                        <span style="color: red;">Out of Stock</span>
+                    <% } %>
+                </td>
+            </tr>
+        <% }); %>
+        <!-- สิ้นสุดการวนลูป -->
+    </tbody>
+</table>
+
+
+<nav aria-label="...">
+  <ul class="pagination">
+    <% if (currentPage > 1) { %>
+      <li class="page-item">
+        <a class="page-link" href="?page=<%= currentPage - 1 %>">Previous</a>
+      </li>
+    <% } else { %>
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+    <% } %>
+    <% for (let i = 1; i <= totalPages; i++) { %>
+    <li class="page-item"><a class="page-link" href="/showProduct?page=<%= i %>"><%= i %></a></li>
+    <% } %>
+
+<% if (currentPage < totalPages) { %>
+    <li class="page-item">
+      <a class="page-link" href="/showProduct?page=<%= currentPage + 1 %>">Next</a>
+    </li>
+    <% } %>
+  </ul>
+  
+</nav>
+</div>

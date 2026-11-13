@@ -2,6 +2,12 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const path = require('path');
+const url = require('url');
+const fs = require('fs');
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 
 app.get('/', (req, res) => {
   console.log('path:', path.join(__dirname, 'index.html'));

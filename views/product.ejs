@@ -1,0 +1,7 @@
+<h1 class="display-3 text-warning">Product</h1>
+<% if (id) { %>
+    <p>รหัสที่รับมา (Parameter ID): <strong><%= id %></strong></p>
+    <p>รายละเอียด: <strong><%= detailInfo %></strong></p>
+<% } else { %>
+    <p class="text-danger">กรุณาระบุ Parameter ต่อท้าย URL เช่น ?id=1</p>
+<% } %>

@@ -1,0 +1,55 @@
+<section class="hero">
+			<div class="container">
+				<div class="eyebrow">ABOUT AMBERTECH</div>
+				<h1>เกี่ยวกับเรา</h1>
+				<p>Ambertech มุ่งมั่นนำเทคโนโลยีมาสร้างสรรค์โซลูชันที่ตอบโจทย์การทำงานและการเติบโตของธุรกิจ</p>
+			</div>
+		</section>
+
+		<section>
+			<div class="container about-grid">
+				<div class="copy">
+					<div class="eyebrow">WHO WE ARE</div>
+					<h2>เทคโนโลยีที่เข้าใจธุรกิจของคุณ</h2>
+					<p>เราเชื่อว่าเทคโนโลยีที่ดีควรใช้งานได้จริง ช่วยให้การทำงานมีประสิทธิภาพ และเติบโตไปพร้อมกับความต้องการขององค์กร</p>
+					<p>ทีม Ambertech ให้ความสำคัญกับการรับฟัง ทำความเข้าใจโจทย์ และร่วมพัฒนาแนวทางที่เหมาะสมในทุกขั้นตอน</p>
+				</div>
+				<div class="highlight">
+					<h3>แนวทางของเรา</h3>
+					<p>ทำงานอย่างใกล้ชิดกับลูกค้า เพื่อส่งมอบบริการและโซลูชันด้านเทคโนโลยีที่มีคุณภาพ น่าเชื่อถือ และพร้อมต่อยอดในอนาคต</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact-section" id="contact">
+			<div class="container">
+				<div class="contact-heading">
+					<div class="eyebrow">GET IN TOUCH</div>
+					<h2>ติดต่อสอบถาม</h2>
+					<p>สนใจบริการหรือมีข้อสงสัย ติดต่อทีมงาน Abbertech ได้ที่ช่องทางด้านล่าง</p>
+				</div>
+				<div class="contact-card">
+					<div class="contact-row">
+						<div class="contact-label">บริษัท</div>
+						<div class="contact-value">Abbertech</div>
+					</div>
+					<div class="contact-row">
+						<div class="contact-label">อีเมล</div>
+						<div class="contact-value">กรุณาระบุอีเมลติดต่อของบริษัท</div>
+					</div>
+					<div class="contact-row">
+						<div class="contact-label">โทรศัพท์</div>
+						<div class="contact-value">กรุณาระบุหมายเลขโทรศัพท์</div>
+					</div>
+					<p class="contact-note">สามารถติดต่อสอบถามรายละเอียดเพิ่มเติมหรือขอนัดหมายพูดคุยกับทีมงานได้</p>
+				</div>
+			</div>
+            <div>
+                <% if (id) { %>
+    <p>รหัสที่รับมา (Parameter ID): <strong><%= id %></strong></p>
+    <p>รายละเอียด: <strong><%= detailInfo %></strong></p>
+<% } else { %>
+    <p style="color: red;">กรุณาระบุ Parameter ต่อท้าย URL เช่น /detail?id=1</p>
+<% } %>
+            </div>
+		</section>
